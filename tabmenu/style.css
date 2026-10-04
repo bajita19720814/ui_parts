@@ -1,0 +1,26 @@
+nav {
+    margin: 32px;
+    font-size: 12px;
+}
+#title {
+    display: flex;
+}
+#title > div {
+    padding: 4px 24px;
+    border: 1px solid #aaa;
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+}
+#title > div.active {
+    background-color: #aaa;
+    color: #fff;
+}
+#description > div {
+    background-color: #aaa;
+    color: #fff;
+    padding: 16px;
+    border-radius: 0  0 4px 4px;
+}
+#description > div.hidden {
+    display: none;
+}

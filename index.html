@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My UI Parts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="ui_favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#components">UI Components</a></li>
+                <li><a href="#interactive">Interactive Features</a></li>
+                <li><a href="#utilities">Utilities</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <article>
+                <p class="hero_title">UI Parts Collection</p>
+                <p class="hero_description">Reusable components for your web projects</p>
+            </article>      
+            <img src="ui_logo.png">
+        </section>
+        <section id="components">
+            <h1>UI Components</h1>
+            <p class="description_title">Webでよく使われる基本的なUIコンポーネントをまとめています。</p>
+            <div>
+                <h2>Tabs <span>タブメニュー</span></h2>
+                <p>複数のコンテンツを切り替えるシンプルなタブUIです。</p>
+                <iframe src="tabmenu/index.html" width="100%" height="180px"></iframe>
+            </div>
+            <div>
+                <h2>Accordion <span>アコーディオン</span></h2>
+                <p>質問や情報を折りたたんで整理できるアコーディオンUIです。</p>
+                <iframe src="accordion/index.html" width="100%" height="160px"></iframe>
+            </div>
+            <div>
+                <h2>Hamburger Menu <span>ハンバーガーメニュー</span></h2>
+                <p>スマホ向けのナビゲーションを開閉できるメニューUIです。</p>
+                <iframe src="hamburger_menu/index.html" height="180px" width="100%"></iframe>
+            </div>
+            <div>
+                <h2>Modal Window <span>モーダルウィンドウ</span></h2>
+                <p>ボタン操作で中央に表示されるポップアップUIです。</p>
+                <iframe src="modal_window/index.html" width="100%" height="180px"></iframe>
+            </div>
+            <div>
+                <h2>Slide Carousel <span>スライドカルーセル</span></h2>
+                <p>画像を横方向にスライドして切り替えるカルーセルUIです。</p>
+                <iframe src="carousel/index.html" width="100%" height="300px"></iframe>
+            </div>
+            <div>
+                <h2>Crossfade Slider <span>クロスフェードスライダー</span></h2>
+                <p>画像がふんわり重なりながら切り替わるクロスフェード式のスライダーです。</p>
+                <p></p>
+                <iframe src="animation/index.html" width="100%" height="182px"></iframe>
+            </div>
+            <div>
+                <h2>Grid Layout <span>グリッドレイアウト</span></h2>
+                <p>コンテナ幅に応じて列数が変化するレスポンシブなグリッドレイアウトです。</p>
+                <input type="range" min="200" max="800" value="320" id="widthRange">
+                <div id="demoBox">
+                    <iframe src="grid_imgae/index.html" width="100%" height="400px"></iframe>
+                </div>
+            </div>
+            <!-- <div>
+                <h2></h2>
+                <p></p>
+                <iframe src="" width=""></iframe>
+            </div> -->
+        </section>
+        <section id="interactive">
+            <h1>Interactive Features</h1>
+            <p class="description_title">操作や動きによって変化するインタラクティブなUIパーツをまとめています。</p>
+            <div>
+                <h2>Slideshow <span>スライドショー</span></h2>
+                <p>画像を左右に切り替える軽量スライドショー。サムネイル選択にも対応しています。</p>
+                <iframe src="slideshow/index.html" width="100%" height="332px"></iframe>
+            </div>
+            <div>
+                <h2>Loading Spinner <span>ローディングアイコン</span></h2>
+                <p>読み込み中であることを示すシンプルなスピナーアニメーションです。</p>
+                <iframe src="loading_icon/index.html" width="300px" height="180px"></iframe>
+            </div>
+            <div>
+                <h2>Dragg & Drop <span>ドラッグアンドドロップ</span></h2>
+                <p>要素をドラッグして自由に配置できるインタラクションのデモです。</p>
+                <iframe src="draggerble/index.html" width="100%" height="302px"></iframe>
+            </div>
+            <div>
+                <h2>Scroll Reveal <span>スクロールリビール</span></h2>
+                <p>スクロールに合わせてコンテンツがふんわり表示されるアニメーションです。</p>
+                <iframe src="intersection_observer/index.html" width="100%" height="240px"></iframe>
+            </div>
+        </section>
+        <section id="utilities">
+            <h1>Utilities</h1>
+            <p class="description_title">日常的な操作を補助する軽量ツールをまとめています。</p>
+            <div>
+                <h2>Calendar <span>カレンダー</span></h2>
+                <p>日付選択と Today ボタンを備えたミニマルなカレンダーUI。</p>
+                <iframe src="calendar/index.html" width="312px" height="312px"></iframe>
+            </div>
+            <div>
+                <h2>Stopwatch <span>ストップウォッチ</span></h2>
+                <p>ミリ秒まで計測できる軽量ストップウォッチ。</p>
+                <iframe src="stopwatch/index.html" width="320px" height="124px"></iframe>
+            </div>
+            <!-- <div>
+                <h2></h2>
+                <p></p>
+                <iframe src="" width=""></iframe>
+            </div> -->
+        </section>
+        
+    </main>
+    <footer>
+        &copy; 2026 bajita UI Parts
+    </footer>
+    <script>
+        const range = document.getElementById("widthRange");
+        const box = document.getElementById("demoBox");
+
+        range.addEventListener('input', () => {
+            box.style.width = range.value + 'px';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #2b3330;
+}
+header {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-color: #5f3830;
+    color: aliceblue;
+}
+nav {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    margin: 0;
+    padding: 0 32px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+li {
+    height: 64px;
+    line-height: 64px;
+    font-size: 14px;
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+section {
+    margin: 0;
+    padding: 64px 8px 8px 8px;
+}
+p {
+    font-size: 12px;
+    line-height: 12px;
+    margin: 6px 0;
+}
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff6ef;
+    padding: 82px 24px 24px 24px;
+}
+.hero_title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.hero > img {
+    width: 60px;
+    height: 60px;
+}
+h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+section > div {
+    padding: 24px 16px;
+}
+h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+span {
+    font-size: 12px;
+}
+#demoBox {
+    border: noen;
+    width: 320px;
+    margin-top: 16px;
+    overflow: hidden;
+}
+#demoBox iframe {
+    margin: 2px;
+}
+
+.description_title {
+    text-align: center;
+}
+iframe {
+    margin-top: 12px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 4px#9ba5a0;
+}
+footer {
+    background-color: #5f3830;
+    color: aliceblue;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 32px;
+}
+@media (max-width: 400px) {
+    ul {
+        padding: 0 8px;
+    }
+    li {
+        font-size: 12px;
+        line-height: 36px;
+        height: 36px;
+    }
+    section {
+        padding-top: 24px;
+    }
+    .hero {
+        padding-top: 48px;
+    }
+    section > div {
+        padding: 16px 8px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    span {
+        font-size: 10px;
+    }
+}
+

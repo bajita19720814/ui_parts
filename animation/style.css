@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+section {
+    position: relative;
+    margin: 16px auto;
+    width: 86vw;
+    height: 120px;
+    padding: 0;
+}
+section > img {
+    width: 86vw;
+    height: 150px;
+    position: absolute;
+    opacity: 0;
+}
+section > img.current {
+    object-fit: cover;
+    transition: opacity 2s ease;
+    opacity: 1;
+}
+@media (min-width: 700px) {
+    section {
+        width: 600px;
+    }
+    section > img {
+        width: 600px;
+    }
+}

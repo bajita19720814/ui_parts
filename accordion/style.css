@@ -1,0 +1,38 @@
+h1 {
+    margin-left: 16px;
+    font-size: 16px;
+}
+dl > div {
+    margin-bottom: 8px;
+}
+dt {
+    position: relative;
+    padding: 2px 8px;
+    font-size: 12px;
+}
+dd {
+    padding: 2px 8px;
+    position: relative;
+    display: none;
+    font-size: 10px;
+}
+dt::before {
+    content: "Q:";
+}
+dd::before {
+    content: "A:";
+    position: absolute;
+    left: -16px;
+}
+dt::after {
+    content: "+";
+    position: absolute;
+    top: 8px;
+    right: 32px;
+}
+dl > div.appear > dd {
+    display: block;
+}
+dl > div.appear > dt::after {
+    content: "―";
+}

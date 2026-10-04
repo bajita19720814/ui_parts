@@ -1,0 +1,28 @@
+main {
+    width: 140px;
+    margin: 16px auto;
+}
+h1 {
+    font-size: 16px;
+    text-align: center;
+}
+h2 {
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 12px;
+}
+section {
+    margin: 32px 0;
+}
+img {
+    opacity: 0;
+    transform: translateY(0);
+    transition: 0.5s;
+}
+img.active {
+    opacity: 1;
+    transition: translateY(50px);
+    
+}

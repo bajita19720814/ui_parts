@@ -1,0 +1,44 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#btn, #close {
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    margin: 16px auto;
+    cursor: pointer;
+}
+#modal {
+    position: absolute;
+    width: 180px;
+    height: 120px;
+    top: 0;
+    left: 0;
+    right: 0;
+    line-height: 32px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    margin: 32px auto;
+    z-index: 3;
+    transition: 0.5s;
+}
+#mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.hidden {
+    display: none;
+}
+.disabled {
+    transform:translateY(-200px);
+}

@@ -1,0 +1,19 @@
+body {
+    background-color: #eee;
+}
+main {
+    background-color: #fff;
+    width: 280px;
+    height: 280px;
+    margin: 8px auto;
+    padding: 1px;
+    position: relative;
+}
+div {
+    width: 24px;
+    height: 24px;
+    background-color: blue;
+    border-radius: 12px;
+    margin: 12px;
+    cursor: pointer;
+}
