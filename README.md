@@ -18,5 +18,5 @@ Web サイト制作でよく使う UI コンポーネントを
 - Calendar
 - Stopwatch
 
--  全てのコンポーネントの動作はこちら  
+--  全てのコンポーネントの動作はこちら  
 https://bajita19720814.github.io/ui_parts/index.html
