@@ -67,5 +67,6 @@
             document.removeEventListener('touchmove', onTouchMove);
         }, { once: true });
     });
-
+        // ページスクロールを止める（ドラッグ中のみ）
+    document.addEventListener('touchmove', preventScroll, { passive: false });
 }
